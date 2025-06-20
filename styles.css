@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+  background-color: hsl(0, 0%, 97%);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background-color: none;
+  outline: none;
+}
+
+main.testimonial-grid {
+  max-width: 1110px;
+  margin: 0 auto;
+  border: 2px solid red;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+article {
+  border: 2px solid yellow;
+}
+
+article.testimonial-daniel {
+  border: 2px solid green;
+  grid-column: 1/3;
+  grid-row: 1/2;
+  height: 60%;
+}
+
+article.testimonial-jonathan {
+  border: 2px solid seagreen;
+  grid-row: 1;
+  height: 60%;
+  /* grid-column: 1; */
+}
+article.testimonial-kira {
+  border: 2px solid sandybrown;
+  grid-column: 4;
+  grid-row: 1;
+}
+
+article.testimonial-jeanette {
+  border: 2px solid rebeccapurple;
+  grid-column: 3;
+  /* grid-row: 1; */
+}
+
+article.testimonial-patrick {
+  border: 2px solid red;
+}
