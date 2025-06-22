@@ -42,13 +42,13 @@ textarea {
 
 main.testimonial-grid {
   max-width: 1110px;
-  height: 100svh;
+  height: auto;
   margin: 2rem auto;
   border: 2px solid red;
   padding: 15px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  /* grid-template-rows: repeat(4, 1fr); */
   gap: 8px;
 }
 
@@ -86,23 +86,33 @@ article {
 .testimonial-jeanette {
   background-color: hsl(0, 0%, 100%);
   grid-column: 1;
-  grid-row: 2;
+  grid-row: 2/3;
   height: 100%;
 }
 
 .testimonial-patrick {
   background-color: hsl(0, 0%, 7%);
   color: hsl(0, 0%, 100%);
-  grid-row: 2;
+  grid-row: 2/3;
   grid-column: 2/4;
 }
 
 .testimonial {
   border: 2px solid red;
   width: 100%;
-  padding: 0.3rem;
+  padding: 0.3rem 1.6rem;
 }
 
+p.testimonial__heading {
+  /* border: 2px solid green; */
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+p.testimonial__text {
+  border: 2px solid green;
+  font-size: 0.9rem;
+}
 header {
   justify-content: flex-start;
   align-items: center;
@@ -118,6 +128,8 @@ header p {
 
 header img {
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
 }
 
 header #image-cover {
