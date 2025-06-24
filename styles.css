@@ -15,6 +15,13 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+/* ...existing code... */
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: underline; /* Add underline for accessibility */
+}
+/* ...existing code... */
 ul,
 ol {
   list-style: none;
@@ -38,6 +45,17 @@ textarea {
   border: none;
   background-color: none;
   outline: none;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 :root {
   /* Colors */
