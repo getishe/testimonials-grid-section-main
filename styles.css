@@ -268,7 +268,8 @@ header p {
     grid-row: 3;
   }
 }
-
+/* //mobile responsive 
+ */
 @media (max-width: 600px) {
   main.testimonial-grid {
     grid-template-columns: 1fr;
