@@ -242,7 +242,7 @@ header p {
     margin: 1rem 0;
   }
 }
-
+/* tablet device  */
 @media (max-width: 900px) {
   main.testimonial-grid {
     grid-template-columns: repeat(2, 1fr);
